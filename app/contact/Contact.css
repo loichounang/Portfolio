@@ -2,7 +2,7 @@
 .contact-intro-section {
   position: relative;
   background: linear-gradient(180deg, #05050a 0%, #0a0a14 100%);
-  padding: 6rem 2rem 4rem;
+   padding: 8rem 1rem 4rem;
   overflow: hidden;
 }
 
@@ -72,7 +72,7 @@
   box-shadow: 0 4px 12px rgba(124, 58, 237, 0.15);
 }
 
-/* .contact-badge-dot {
+ .contact-badge-dot {
   width: 8px;
   height: 8px;
   background: linear-gradient(135deg, #a78bfa, #c084fc);
@@ -80,7 +80,7 @@
   animation: pulse-contact 2s ease-in-out infinite;
   box-shadow: 0 0 10px rgba(167, 139, 250, 0.6);
   margin-top: 10px;
-} */
+} 
 
 @keyframes pulse-contact {
   0%, 100% {
@@ -203,8 +203,8 @@
 }
 
 .contact-info-value {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 0.9rem;
+  font-weight: 600;
   color: #ffffff;
   margin-bottom: 0.3rem;
 }
@@ -339,7 +339,7 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .contact-intro-section {
-    padding: 4rem 1.5rem 3rem;
+    padding: 8rem 1.5rem 5rem; 
   }
 
   .contact-info-grid {
@@ -369,7 +369,7 @@
 
 @media (max-width: 480px) {
   .contact-intro-section {
-    padding: 3rem 1rem 2rem;
+    padding: 7rem 1rem 4rem;
   }
 
   .contact-info-card,

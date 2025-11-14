@@ -55,7 +55,7 @@ export default function ContactIntro() {
 
       <div className="contact-intro-container">
         {/* Badge */}
-        {/* <motion.div
+        * <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -64,7 +64,7 @@ export default function ContactIntro() {
         >
           <span className="contact-badge-dot"></span>
           Travaillons ensemble
-        </motion.div> */}
+        </motion.div> 
 
         {/* Titre et description */}
         <motion.div
