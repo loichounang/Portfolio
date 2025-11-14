@@ -1,0 +1,82 @@
+.about-preview {
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #cbd5e1;
+  
+  background: rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  position: relative;
+}
+
+/* Glow léger autour */
+.about-preview::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: radial-gradient(
+    circle at top,
+    rgba(96, 165, 250, 0.12),
+    transparent 70%
+  );
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.about-preview h2 {
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.about-preview p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+  color: #e2e8f0;
+}
+
+/* bouton plus beau */
+.btn-more {
+  display: inline-block;
+  padding: 0.9rem 1.8rem;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  color: #ffffff;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+
+  box-shadow: 0 4px 15px rgba(96, 165, 250, 0.35);
+  transition: all 0.3s ease;
+}
+
+.btn-more:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+  box-shadow: 0 10px 25px rgba(96, 165, 250, 0.45);
+}
+
+/* responsive */
+@media (max-width: 600px) {
+  .about-preview {
+    padding: 2rem 1.2rem;
+    margin: 4rem auto;
+  }
+
+  .about-preview h2 {
+    font-size: 2rem;
+  }
+
+  .about-preview p {
+    font-size: 1rem;
+  }
+}
